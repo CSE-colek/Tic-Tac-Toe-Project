@@ -2,6 +2,7 @@ const cells = document.querySelectorAll('.cell');
 const resultMessage = document.getElementById('gameresult');
 
 var turnNum = 0;
+// Records what cells are selected
 var cellList = {
     0: false,
     1: false,
@@ -14,7 +15,7 @@ var cellList = {
     8: false,
 };
 var cellSign = {
-    0: 'true',
+    0: '',
     1: '',
     2: '',
     3: '',
