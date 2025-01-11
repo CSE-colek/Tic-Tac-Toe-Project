@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(147, 204, 255);
+}
+.cell {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    font-size: 26px;
+    transition: background-color 0.5s ease;
+    height: 50px;
+    width: 50px;
+}
+#resetbutton {
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: rgb(199, 0, 0);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    display: none;
+    margin: 20px auto;
+}
+#resetbutton:hover {
+    background-color: rgb(255, 0, 0);
+}
+.cell:disabled {
+    opacity: 1; 
+    color: black;            
+    cursor: default;      
+    background-color: white;
+    
+}
+.cell:hover{
+    background-color: rgb(163, 224, 255);
+}
+.cell:disabled:hover {
+    background-color: white;
+    transform: none;
+}
+.grid {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+#gameresult {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
